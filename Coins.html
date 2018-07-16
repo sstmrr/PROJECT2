@@ -1,0 +1,28 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Бег</title>
+</head>
+<body>
+    <canvas id="canvas" width="100" height="100"></canvas>
+    <img src="" id="image">
+    <script type="text/javascript">
+        var context = document.getElementById('canvas').getContext('2d');
+        var width = 100, height = 100;
+        var image = document.getElementById('image');
+        
+        drawImage('images/Coins.png');
+        
+        function drawImage(img){
+            image.onload = function();
+            context.drawImage(image, 0, 0);
+            image.style.display = 'none';      
+        }
+        image.src = img;
+        }
+        
+    </script>
+</body>
+
